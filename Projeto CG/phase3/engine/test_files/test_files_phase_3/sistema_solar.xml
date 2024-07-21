@@ -1,0 +1,314 @@
+<world>
+	<window width="800" height="600"/>
+	<camera>
+		<position x="50" y="100" z="200" />
+		<lookAt x="50" y="0" z="0" />
+		<up x="0" y="1" z="0" />
+		<projection fov="60" near="100" far="500" />
+	</camera>
+
+	<group>
+		<group>
+			<transform>
+				<!-- Sol -->
+				<scale x="25" y="25" z="25"/>				 
+				<rotate time="50" x="0" y="1" z="0"/>		
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Mercurio -->
+			<transform>
+				<translate time = "4" align = "true">
+					<point x = "35" y = "0" z = "0" />
+					<point x = "25" y = "0" z = "-25" />
+					<point x = "0" y = "0" z = "-35" />
+					<point x = "-25" y = "0" z = "-25" />
+					<point x = "-35" y = "0" z = "0" />
+					<point x = "-25" y = "0" z = "25" />
+					<point x = "0" y = "0" z = "35" />
+					<point x = "25" y = "0" z = "25" />
+				</translate>
+				<scale x="1" y="1" z="1" />
+				<rotate time="50" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Venus -->
+			<transform>
+				<translate time = "6" align = "true">
+					<point x = "45" y = "0" z = "0" />
+					<point x = "30" y = "0" z = "-30" />
+					<point x = "0" y = "0" z = "-45" />
+					<point x = "-30" y = "0" z = "-30" />
+					<point x = "-45" y = "0" z = "0" />
+					<point x = "-30" y = "0" z = "30" />
+					<point x = "0" y = "0" z = "45" />
+					<point x = "30" y = "0" z = "30" />
+				</translate>
+				<scale x="1.5" y="1.5" z="1.5" />
+				<rotate time="50" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Terra -->
+			<transform>
+				<translate time = "10" align= "true">
+					<point x = "55" y = "0" z = "0" />
+					<point x = "40" y = "0" z = "-40" />
+					<point x = "0" y = "0" z = "-55" />
+					<point x = "-40" y = "0" z = "-40" />
+					<point x = "-55" y = "0" z = "0" />
+					<point x = "-40" y = "0" z = "40" />
+					<point x = "0" y = "0" z = "55" />
+					<point x = "40" y = "0" z = "40" />
+				</translate>
+				<scale x="2.5" y="2.5" z="2.5" />
+				<rotate time="20" x="0" y="1" z="0" />
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+			<group>
+				<!-- Lua da Terra -->
+				<transform>
+					<translate time = "30" align = "false">
+						<point x = "3.5" y = "0" z = "0" />
+						<point x = "2.5" y = "0" z = "-2.5" />
+						<point x = "0" y = "0" z = "-3.5" />
+						<point x = "-2.5" y = "0" z = "-2.5" />
+						<point x = "-3.5" y = "0" z = "0" />
+						<point x = "-2.5" y = "0" z = "2.5" />
+						<point x = "0" y = "0" z = "3.5" />
+						<point x = "2.5" y = "0" z = "2.5" />
+					</translate>
+					<scale x="0.3" y="0.3" z="0.3" />
+				</transform>
+				<models>
+					<model file="sphere_1_8_8.3d" />
+				</models>
+			</group>
+		</group>
+		<group>
+			<!-- Marte -->
+			<transform>
+				<translate time = "15" align= "true" >
+					<point x = "70" y = "0" z = "0" />
+					<point x = "50" y = "0" z = "-50" />
+					<point x = "0" y = "0" z = "-70" />
+					<point x = "-50" y = "0" z = "-50" />
+					<point x = "-70" y = "0" z = "0" />
+					<point x = "-50" y = "0" z = "50" />
+					<point x = "0" y = "0" z = "70" />
+					<point x = "50" y = "0" z = "50" />
+				</translate>
+				<scale x="1.3" y="1.3" z="1.3" />
+				<rotate time="30" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Jupiter -->
+			<transform>
+				<translate time = "20" align="true">
+					<point x = "100" y = "0" z = "0" />
+					<point x = "70" y = "0" z = "-70" />
+					<point x = "0" y = "0" z = "-100" />
+					<point x = "-70" y = "0" z = "-70" />
+					<point x = "-100" y = "0" z = "0" />
+					<point x = "-70" y = "0" z = "70" />
+					<point x = "0" y = "0" z = "100" />
+					<point x = "70" y = "0" z = "70" />
+				</translate>
+				<scale x="10" y="10" z="10" />
+				<rotate time="30" x="0" y="1" z="0" />
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+			<group>
+				<!-- Jupiter Lua 1 -->
+				<transform>
+					<scale x="0.1" y="0.1" z="0.1" />
+					<translate time = "5" align = "false">
+						<point x = "9" y = "8" z = "0" />
+						<point x = "6" y = "5" z = "-7" />
+						<point x = "0" y = "0" z = "-10" />
+						<point x = "-6" y = "-5" z = "-7" />
+						<point x = "-9" y = "-8" z = "0" />
+						<point x = "-6" y = "-5" z = "7" />
+						<point x = "0" y = "0" z = "10" />
+						<point x = "6" y = "5" z = "7" />
+					</translate>
+					<scale x="0.3" y="0.3" z="0.3" />
+					<rotate time="30" x="0" y="1" z="0" />
+				</transform>
+				<models>
+					<model file="sphere_1_10_10.3d" />
+				</models>
+			</group>
+			<group>
+				<!-- Jupiter Lua 2 -->
+				<transform>
+					<scale x="0.1" y="0.1" z="0.1" />
+					<translate time = "5" align = "false">
+						<point x = "11" y = "0" z = "0" />
+						<point x = "9" y = "10" z = "-8" />
+						<point x = "0" y = "15" z = "-10" />
+						<point x = "-8" y = "10" z = "-8" />
+						<point x = "-10" y = "0" z = "0" />
+						<point x = "-8" y = "-10" z = "8" />
+						<point x = "0" y = "-15" z = "10" />
+						<point x = "8" y = "-10" z = "8" />
+					</translate>
+					<scale x="0.6" y="0.6" z="0.6" />
+					<rotate time="30" x="0" y="1" z="0" />
+				</transform>
+				<models>
+					<model file="sphere_1_10_10.3d" />
+				</models>
+			</group>
+			<group>
+				<!-- Jupiter Lua 3 -->
+				<transform>
+					<scale x="0.1" y="0.1" z="0.1" />
+					<translate time = "5" align = "false" >
+						<point x = "13" y = "0" z = "0" />
+						<point x = "9" y = "5" z = "-7" />
+						<point x = "0" y = "7" z = "-10" />
+						<point x = "-9" y = "5" z = "-7" />
+						<point x = "-13" y = "0" z = "0" />
+						<point x = "-9" y = "-5" z = "7" />
+						<point x = "0" y = "-7" z = "10" />
+						<point x = "9" y = "-5" z = "7" />
+					</translate>
+					<scale x="0.3" y="0.3" z="0.3" />
+					<rotate time="2.0" x="0" y="1" z="0" />
+				</transform>
+				<models>
+					<model file="sphere_1_10_10.3d" />
+				</models>
+			</group>
+			<group>
+				<!-- Jupiter Lua 4 -->
+				<transform>
+					<scale x="0.1" y="0.1" z="0.1" />
+					<translate time = "5" align = "false" >
+						<point x = "15" y = "12" z = "0" />
+						<point x = "11" y = "9" z = "-7" />
+						<point x = "0" y = "0" z = "-10" />
+						<point x = "-11" y = "-9" z = "-7" />
+						<point x = "-15" y = "-12" z = "0" />
+						<point x = "-11" y = "-9" z = "7" />
+						<point x = "0" y = "0" z = "10" />
+						<point x = "11" y = "9" z = "7" />
+					</translate>
+					<scale x="0.5" y="0.5" z="0.5" />
+				</transform>
+				<models>
+					<model file="sphere_1_10_10.3d" />
+				</models>
+			</group>
+		</group>
+		<group>
+			<!-- Saturno -->
+			<transform>
+				<translate time = "50" align = "true" >
+					<point x = "150" y = "0" z = "0" />
+					<point x = "105" y = "0" z = "-105" />
+					<point x = "0" y = "0" z = "-150" />
+					<point x = "-105" y = "0" z = "-105" />
+					<point x = "-150" y = "0" z = "0" />
+					<point x = "-105" y = "0" z = "105" />
+					<point x = "0" y = "0" z = "150" />
+					<point x = "105" y = "0" z = "105" />
+				</translate>
+				<scale x="7" y="7" z="7" />
+				<rotate time="30" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+			<group>
+				<!-- Anel Saturno -->
+				<transform>
+					<rotate angle="-30" x="0" y ="0" z = "1" />
+					<scale x="0.125" y="0.01" z="0.125" />
+				</transform>
+				<models>
+					<model file="torus_10_8_15_8.3d" />
+				</models>
+			</group>
+		</group>
+		<group>
+			<!-- Urano -->
+			<transform>
+				<translate time = "80" align = "true" >
+					<point x = "200" y = "0" z = "0" />
+					<point x = "140" y = "0" z = "-140" />
+					<point x = "0" y = "0" z = "-200" />
+					<point x = "-140" y = "0" z = "-140" />
+					<point x = "-200" y = "0" z = "0" />
+					<point x = "-140" y = "0" z = "140" />
+					<point x = "0" y = "0" z = "200" />
+					<point x = "140" y = "0" z = "140" />
+				</translate>
+				<scale x="5" y="5" z="5" />
+				<rotate time="30" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Neptuno -->
+			<transform>
+				<translate time = "100" align = "true" >
+					<point x = "250" y = "0" z = "0" />
+					<point x = "180" y = "0" z = "-180" />
+					<point x = "0" y = "0" z = "-250" />
+					<point x = "-180" y = "0" z = "-180" />
+					<point x = "-250" y = "0" z = "0" />
+					<point x = "-180" y = "0" z = "180" />
+					<point x = "0" y = "0" z = "250" />
+					<point x = "180" y = "0" z = "180" />
+				</translate>
+				<scale x="4" y="4" z="4" />
+				<rotate time="30" x="0" y="1" z="0"/>
+			</transform>
+			<models>
+				<model file="sphere_1_10_10.3d" />
+			</models>
+		</group>
+		<group>
+			<!-- Cometa -->
+			<transform>
+				<translate time = "15" align = "true" >
+					<point x = "85" y = "55" z = "0" />
+					<point x = "60" y = "40" z = "-60" />
+					<point x = "0" y = "0" z = "-85" />
+					<point x = "-60" y = "-40" z = "-60" />
+					<point x = "-85" y = "-55" z = "0" />
+					<point x = "-60" y = "-40" z = "60" />
+					<point x = "0" y = "0" z = "85" />
+					<point x = "60" y = "40" z = "60" />
+				</translate>
+				<scale x="3" y="1" z="2" />
+			</transform>
+			<models>
+				<model file="bezier_10.3d" />
+				<!-- model file="bezier_10.3d sphere_1_8_8.3d -->
+			</models>
+		</group>
+	</group>
+</world>
